@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPanelController">
+   <children>
+      <TextField fx:id="dirPath" layoutX="66.0" layoutY="57.0" prefHeight="27.0" prefWidth="256.0" />
+      <Button layoutX="66.0" layoutY="335.0" mnemonicParsing="false" onAction="#onClickGetData" text="取得" />
+      <TextArea fx:id="textArea" layoutX="66.0" layoutY="146.0" prefHeight="176.0" prefWidth="303.0" text=""/>
+      <Text layoutX="68.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="対象" wrappingWidth="168.22900390625" />
+      <Text layoutX="67.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="取得結果" wrappingWidth="85.22900390625" />
+      <Button layoutX="322.0" layoutY="57.0" mnemonicParsing="false" onAction="#onClickSelectFolder" text="開く" />
+   </children>
+</Pane>

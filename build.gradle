@@ -10,7 +10,11 @@ repositories {
 
 javafx {
     version = "15"
-    modules = [ 'javafx.controls' ]
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
-mainClassName = 'org.openjfx.MainApp'
+mainClassName = 'application/application.MainApp'
+
+dependencies {
+ 	compile group: 'org.openjfx', name: 'javafx-fxml', version: '15'
+}

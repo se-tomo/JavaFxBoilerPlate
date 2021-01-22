@@ -1,8 +1,11 @@
 module application {
-	requires javafx.graphics;
-	requires javafx.controls;
-	requires javafx.fxml;
-	requires javafx.base;
+	requires transitive javafx.graphics;
+	requires transitive javafx.controls;
+	requires transitive javafx.fxml;
+	requires transitive javafx.base;
+	requires poi;
+	requires poi.ooxml;
+	requires java.desktop;
 
 	opens application;
 	exports application;

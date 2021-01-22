@@ -11,7 +11,7 @@ public class MyStringUtil {
 	 * @return
 	 */
 	public static boolean isExcel(Path path) {
-		return path.endsWith(".csv") || path.endsWith(".xlsx");
+		return path.toFile().getName().endsWith(".csv") || path.toFile().getName().endsWith(".xlsx");
 	}
 
 	/**

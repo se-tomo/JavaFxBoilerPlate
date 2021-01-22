@@ -16,5 +16,10 @@ javafx {
 mainClassName = 'application/application.MainApp'
 
 dependencies {
- 	compile group: 'org.openjfx', name: 'javafx-fxml', version: '15'
+ 	implementation group: 'org.openjfx', name: 'javafx-fxml', version: '15'
+	compile group: 'org.apache.poi', name : 'poi', version: '4.1.2'
+	compile(group: 'org.apache.poi', name : 'poi-ooxml', version: '4.1.2') {
+		exclude group: 'stax', module: 'stax-api'
+	}
+
 }

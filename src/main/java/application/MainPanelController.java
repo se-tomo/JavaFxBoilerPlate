@@ -33,7 +33,7 @@ public class MainPanelController {
 	protected void onClickGetData(ActionEvent evt) {
 		Path path = Paths.get(dirPath.getText());
 		try {
-			Files.walkFileTree(path, new ExcelFileVisitor());
+			Files.walkFileTree(path, new ExcelFileVisitor(textArea));
 		} catch (IOException e) {
 			textArea.setText(e.getMessage());
 		}
